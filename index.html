@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Meta tags -->
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+
+<meta name="description" content="Pizza Universe - The boldest, most colorful pizza joint in the galaxy. Order fresh handcrafted pizzas, explore our menu and book a table online.">
+
+<meta name= "keywords" content="pizza, pizza restaurant, pizza universe, italian pizza, fresh pizza">
+
+<!-- Website title  -->
+
+<title>Pizza Universe - Best Pizza In the Galaxy</title>
+
+<!-- Fav icon -->
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!--linking css file-->
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+
+
+<body>
+
+<!-- Header and navigation stuff -->
+
+
+<header id="top">
+
+    <div class="nav-container">
+
+
+        <!-- logo -->
+
+        <a href="#top" class="logo"> 
+
+            <img src="images/pizza-logo.png" alt="Pizza Universe Logo">
+            Pizza Universe
+        </a>
+        <!-- Skip link for the keyboard users -->
+
+        <a href="#main-content" class="skip-link"> Skip to main content</a>
+
+        <!-- nav bar to go to diffrent sections on the page -->
+
+        <nav aria-label="Main Navigation">
+            <ul role="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+
+<!-- Main Content -->
+
+
+<main id="main-content">
+
+<!-- hero section -->
+
+<div id="hero" class="hero Banner">
+    <div class="hero-content">
+        <h1>Pizza Universe</h1>
+        <p class="tagline">Out of This World Pizza</p>
+        <a href="#menu" class="btn-primary">Explore Our Menu</a>
+    </div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about" aria-labelledby="about-heading">
+    <div class="section-container">
+
+        <h2 id="about-heading">Our Story</h2>
+
+        <p class="first-letter-target">
+            Welcome to Pizza Universe, where every slice is a journey through flavor and fun. Founded in 1988 by a group of pizza obsessed best friends, we set out to craft the most vibrant, bold, and delicious pizzas the galaxy has ever tasted. We use only the freshest of ingredients, handmade dough and sauces from scratch daily.
+        </p>
+
+        <!-- Columns -->
+
+        <div class="columns-block">
+            <p>Our dough is slow fermented for 48 hours, giving it the perfect and chewy crust that keeps the customers wanting more! Every pizza is baked in our stone deck oven at 450 degrees.</p>
+            <p>We source our tomatoes directly from farms based in Southern Italy, and our mozzarella is delivered fresh every morning, No reuses, no left overs.</p>
+            <p>Our team of passionate chefs brings creativity and energy to every slice of pie. From classic Margherita to our signature pie The Galaxy Supreme, there is something for everyone.</p>
+        </div>
+
+
+        <figure>
+
+            <img src="images/margherita-pizza.png" alt="Margherita pizza" width="800" height="450">
+            
+            <figcaption>Our classic Margherita - simple, fresh, and absolutely perfect!</figcaption>
+        </figure>
+
+        <div class="faq-block">
+            <h3>Frequently Asked Questions</h3>
+
+            <details>
+
+                <summary>Do you offer vegan options?</summary>
+                <p>Yes! We have a full vegan menu including our popular Vegan Galaxy Pizza with 100% plant based cheese and seasonal vegetables.</p>
+            </details>
+
+            <details>
+
+                <summary>Can I customise my pizza?</summary>
+                <p>Of course you can! choose whatever base, sauce, cheese and any 5 toppings you please. Your universe, your rules!</p>
+            </details>
+
+            <details>
+
+                <summary>Do you deliver?</summary>
+
+                <p>We deliver within a 10 km radius. Orders can be placed within our contact form or simply give our number a call!</p>
+            </details>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Menu Section -->
+ <section id="menu" aria-labelledby="menu-heading">
+
+    <div class="section-container">
+
+        <h2 id="menu-heading">Our Menu</h2>
+        <p class="section-subtitle">Handcrafted with love, and baked to perfection.</p>
+
+        <div class="popularity-bar">
+
+            <p> Customer Satisfaction</p>
+            <progress value="94" max="100" aria-label="94% customer satisfaction rating">94%</progress>
+            <span>94%</span>
+        </div>
+
+        <!-- Menu Cards -->
+         <div class="menu-grid">
+
+            <!-- Menu card 1 -->
+             <article class="menu-card">
+
+                <img src="images/margherita-pizza.png" alt="Classic Margherita pizza">
+                <div class="menu-card-body">
+                    <h3>Margherita</h3>
+                    <p>San Marzano tomato, fresh mozzarella, extra virgin olive oil.</p>
+                    <!-- size selector, and the prices will change depending on size -->
+
+                    <div class="size-selector">
+                        <button class="size-btn active" data-price-target="price-1" data-price-value="1.500">Small</button>
+                        <button class="size-btn" data-price-target="price-1" data-price-value="2.500">Medium</button>
+                        <button class="size-btn" data-price-target="price-1" data-price-value="3.500">Large</button>
+                    </div>
+                    <span class="price" id="price-1">BD 1.500</span>
+                </div>
+             </article>
+
+             <!-- Menu card 2 -->
+
+               <article class="menu-card">
+
+                <img src="images/galaxy-supreme.png" alt="Galaxy Supreme">
+                <div class="menu-card-body">
+                    <h3>Galaxy Supreme</h3>
+                    <p>Pepperoni, mushrooms, olives, peppers, onions, triple cheese blend.</p>
+                    <!-- size selector, and the prices will change depending on size -->
+
+                    <div class="size-selector">
+                        <button class="size-btn active"  data-price-target="price-2" data-price-value= "2.500">Small</button>
+                        <button class="size-btn"  data-price-target="price-2" data-price-value="3.500">Medium</button>
+                        <button class="size-btn"  data-price-target="price-2" data-price-value="5.500">Large</button>
+                    </div>
+                    <span class="price" id="price-2">BD 2.500</span>
+                </div>
+             </article>
+<!-- Menu card 3 -->
+
+               <article class="menu-card">
+
+                <img src="images/meteor-bbq.png" alt="Meteor BBQ">
+                <div class="menu-card-body">
+                    <h3>Meteor BBQ</h3>
+                    <p>Smoky BBQ sauce, grilled chicken, caramelised onions, cheddar.</p>
+                    <!-- size selector, and the prices will change depending on size -->
+
+                    <div class="size-selector">
+                        <button class="size-btn active" data-price-target="price-3" data-price-value="2.000">Small</button>
+                        <button class="size-btn"data-price-target="price-3" data-price-value="3.000">Medium</button>
+                        <button class="size-btn"data-price-target="price-3" data-price-value="4.800">Large</button>
+                    </div>
+                    <span class="price" id="price-3">BD 2.000</span>
+                </div>
+             </article>
+
+             <!-- Menu card 4 -->
+
+               <article class="menu-card">
+
+                <img src="images/vegan-galaxy.png" alt="Vegan Galaxy">
+                <div class="menu-card-body">
+                    <h3>Vegan Galaxy</h3>
+                    <p>Tomato base, plant based cheese, roasted peppers, spinach, olives.</p>
+                    <!-- size selector, and the prices will change depending on size -->
+
+                    <div class="size-selector">
+                        <button class="size-btn active" data-price-target="price-4" data-price-value="1.800">Small</button>
+                        <button class="size-btn"data-price-target="price-4" data-price-value="2.800">Medium</button>
+                        <button class="size-btn"data-price-target="price-4" data-price-value="4.800">Large</button>
+                    </div>
+                    <span class="price" id="price-4">BD 1.800</span>
+                </div>
+             </article>
+
+             <!-- Menu card 5 -->
+
+               <article class="menu-card">
+
+                <img src="images/supernova-spicy.png" alt="Supernova Spicy">
+                <div class="menu-card-body">
+                    <h3>Supernova Spicy</h3>
+                    <p>Sausage, jalapenos, chillis oil, mozzerella, honey drizzle.</p>
+                    <!-- size selector, and the prices will change depending on size -->
+
+                    <div class="size-selector">
+                        <button class="size-btn active"data-price-target="price-5" data-price-value="2.200">Small</button>
+                        <button class="size-btn"data-price-target="price-5" data-price-value="3.500">Medium</button>
+                        <button class="size-btn"data-price-target="price-5" data-price-value="5.000">Large</button>
+                    </div>
+                    <span class="price" id="price-5">BD 2.200</span>
+                </div>
+             </article>
+
+
+         </div>
+    </div>
+ </section>
+
+
+ <!-- Video and audio section -->
+
+ <section id="media">
+
+    <div class="section-container">
+
+        <h2 id="media-heading">See Us in Action</h2>
+        <p class="section-subtitle">Watch how we craft the best pizza in the universe  from scratch</p>
+
+        <!-- video -->
+
+        <div class="media-block">
+
+            <video controls>
+                <source src="video/video.mp4" type="video/mp4">
+                 <p>Your browser does not support the video type.</p>
+                </video>
+        </div>
+
+        <!-- Audio -->
+
+        <div class="media-block audio-block">
+            <h3>Our Vibe</h3>
+            <p>Enjoy some galactic background music while you browse our menu!</p>
+            <audio controls>
+                <source src="audio/background.mp3" type="audio/mpeg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </div>
+    </div>
+ </section>
+
+
+
+
+
+ <!-- Quiz Section -->
+
+ <section id="quiz">
+    <div class="section-container">
+
+        <h2 id="quiz-heading">Pizza Trivia Quiz</h2>
+        <p class="section-subtitle">Test your pizza knowledge! Answer all questions correctly to prove you are a true pizza fan!</p>
+
+        <div class="quiz-container">
+
+            <!-- Question1 -->
+
+            <div class="quiz-question" id="q1-block">
+                <p class="question-text">1. Which country did pizza originate from?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> France</label>
+                        <label><input type="radio" name="q1" value="b"> USA</label>
+                        <label><input type="radio" name="q1" value="c"> Bahrain</label>
+                        <label><input type="radio" name="q1" value="d"> Italy</label>
+                    </div>
+
+                    <p id="q1-feedback" class="quiz-feedback"></p>
+            </div>
+    <!-- Question 2 -->
+
+            <div class="quiz-question" id="q2-block">
+                <p class="question-text">2. What does "pizza" mean in Italian?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> Bread</label>
+                        <label><input type="radio" name="q2" value="b"> Pie</label>
+                        <label><input type="radio" name="q2" value="c"> Candy</label>
+                        <label><input type="radio" name="q2" value="d"> Cake</label>
+                    </div>
+
+                    <p id="q2-feedback" class="quiz-feedback"></p>
+            </div>
+
+                <!-- Question 3 -->
+
+            <div class="quiz-question" id="q3-block">
+                <p class="question-text">3.Which cheese is traditionally used on a Margherita pizza?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="a"> Cheddar</label>
+                        <label><input type="radio" name="q3" value="b"> Mozzarella</label>
+                        <label><input type="radio" name="q3" value="c"> Parmesan</label>
+                        <label><input type="radio" name="q3" value="d"> Brie</label>
+                    </div>
+
+                    <p id="q3-feedback" class="quiz-feedback"></p>
+            </div>
+
+                <!-- Question 4 -->
+
+            <div class="quiz-question" id="q4-block">
+                <p class="question-text">4.What city in Italy is considered the birthplace of pizza?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="a"> Rome</label>
+                        <label><input type="radio" name="q4" value="b"> Milan</label>
+                        <label><input type="radio" name="q4" value="c"> Naples</label>
+                        <label><input type="radio" name="q4" value="d"> Venice</label>
+                    </div>
+
+                    <p id="q4-feedback" class="quiz-feedback"></p>
+            </div>
+            <!-- Submit button -->
+             <div class="quiz-buttons">
+                <button class="btn-primary" id="quiz-submit" type="button">Submit Answers</button>
+                <button id="quiz-reset" class="btn-primary" type="button" disabled>Reset Quiz</button>
+        </div>
+
+        <!-- score after submitted -->
+
+        <p id="quiz-score" class="quiz-score"></p>
+    </div>  
+</div>
+ </section>
+
+ <!-- Contact and form -->
+
+ <section id="contact">
+
+    <div class="section-container">
+
+        <h2 id="contact-heading">Book a Table</h2>
+        <p class="section-subtitle">Reserve your spot in the universe!</p>
+
+        <form id="booking-form" novalidate>
+
+            <!-- Name feild -->
+
+            <div class="form-group">
+                <label for="full-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="full-name" name="full-name" placeholder="e.g. Hasan Tareef">
+                <!-- error message if they kept nothing-->
+                 <p id="name-error" class="error-msg"></p>
+            </div>
+
+            <!-- Email Feild -->
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. sammy.baqer@example.com">
+                <!-- error message if email is missing or invalid-->
+
+                <p id="email-error" class="error-msg"></p>
+            </div>
+            <!-- Phone feild -->
+
+            <div class="form-group">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +973 39718871">
+            </div>
+
+            <!-- Date Feild -->
+
+            <div class="form-group">
+
+                <label for="date">Preferred Date <span class="required">*</span></label>
+                <input type="date" id="date" name="date">
+                <!-- Error message if date is invalid or empty -->
+
+                <p id="date-error" class="error-msg"></p>
+            </div>
+
+            <!-- Number of Guests feild -->
+             <div class="form-group">
+                <label for="guests">Number of Guests <span class="required">*</span></label>
+                <select id="guests" name="guests">
+                    <option value="">-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+                <!-- Error message for geusts if invalid or empty -->
+                <p id="guests-error" class="error-msg"></p>
+             </div>
+             <!-- Submit button -->
+
+             <button type="submit" class="btn-primary" id="form-submit">Reserve My Table</button>
+
+             <!-- Sucess message -->
+
+             <p id="form-success" class="success-msg"></p>
+        </form>
+    </div>
+ </section>
+
+ </main>
+
+
+
+
+ <!-- Footer section -->
+
+
+ <footer>
+
+    <div class="footer-container">
+        <p class="footer-logo">Pizza Universe</p>
+        <!-- contact info -->
+        <p>123 Road, Manama, Bahrain</p>
+        <p>+973 34448936</p>
+        <p><a href="mailto:202500215@polytechnic.student.bh">202500215@polytechnic.student.bh</a></p>
+
+        <!-- Social Media Links -->
+
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter-logo.png" alt="Twitter">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+            <img src="images/tiktok-logo.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Pizza Universe. All rights reserved.</p>
+    </div>
+ </footer>
+
+ <!-- External Javascript file -->
+
+ <script src="script.js"></script>
+
+</body>
+</html>
